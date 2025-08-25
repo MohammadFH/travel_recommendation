@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="./travel_recommendation.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo">
+                <img src="plane.png" alt="Logo">
+                TravelBloom
+            </div>
+            <div class="links">
+                <a href="./travel_recommendation.html">Home</a>
+                <a href="./about_us.html">About Us</a>
+                <a href="./contact_us.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="social-bar">
+            <span class="line"></span>
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="contactUs">
+            <h1>CONTACT US</h1>
+            <p>Get in touch...</p>
+        </div>
+        <form class="contactContainer">
+            <label for="name"><strong>Name</strong></label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <br><br>
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+            <label for="message"><strong>Message</strong></label>
+            <textarea id="message" name="message" rows="8" placeholder="Enter your message" required></textarea>
+            <br><br>
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+    </body>
+</html>

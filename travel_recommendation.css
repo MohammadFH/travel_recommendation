@@ -1,0 +1,453 @@
+ body {
+      margin: 0;
+      font-family: Arial, sans-serif;   
+      background: linear-gradient(to right , rgba(8, 72, 75, 0.802) , rgba(8, 72, 75, 0.087)) , url('./NewYork.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      overflow: hidden;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      align-items: center;
+     justify-content: space-between;
+      background: linear-gradient(90deg, #1c1f26, rgb(46, 59, 63));
+      padding: 0.521vw 1.042vw;
+      color: white;
+    }
+
+    /* Logo */
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 20px; 
+      font-weight: bold;
+    }
+
+    .logo img {
+      width: 2.1vw;
+      margin-right: 0.5vw;
+    }
+
+    /* Links */
+    .links a {
+      text-decoration: none;
+      color: white;
+      margin: 0 0.79vw;
+      font-weight: bold;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Search box */
+    .search-box {
+      display: flex;
+      align-items: center;
+      background: white;
+      border-radius: 1.31vw;
+      padding: 0.16vw;
+      margin-left: 2.61vw;
+    }
+
+    .search-box input {
+      border: none;
+      padding: 0.42vw 0.63vw;
+      border-radius: 1.31vw;
+      outline: none;
+      width: 10.5vw;
+    }
+
+    .search-box input::placeholder 
+    {
+      color: #0b6b6f;
+    }
+    .search-box button {
+      border: none;
+      padding: 0.42vw 0.63vw;
+      margin-left: 0.27vw;
+      border-radius:0.53vw;
+      cursor: pointer;
+      background: #0b6b6f;
+      color: white;
+      font-weight: bold;
+    }
+
+    .search-box button:hover {
+      background: #08484b;
+    }
+
+    .search-box .icon {
+      margin-left: 0.42vw;
+      color: #0b6b6f;
+      font-size: 0.84vw;
+      cursor: pointer;
+    
+    }
+
+    .social-bar{
+        position: absolute;
+        left: 1.6vw;
+        top: 50%;
+       
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.1vw;
+    }
+
+    .social-bar .line {
+        display: block;
+        width:0.21vw;
+        height: 40vh;
+        background: white;
+        margin-bottom: 4.2vh;
+        
+    }
+    .social-bar a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.1vw;
+        width: 2.5vw;
+      height:4vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 80%;      /* دائرية */
+      border:0.15vw solid white; /* إطار أبيض */
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .social-bar a:hover { 
+    color: rgb(201, 201, 201);
+    }
+
+    .homeContent{
+      position: absolute;
+       align-content: center;
+       left: 12%;
+       
+    }
+    .homeContent h1{
+         margin-top:15vh; 
+        color: white;
+        font-weight:bold;
+        font-size: 4.5vw;
+    }
+
+    .homeContent p{
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.1vw;
+        width: 16vw;
+        margin-top: 2.8vh;
+    }
+    
+    .homeContent button{
+         border: none;
+      margin-top: 3vh;
+      padding:0.5vw 0.7vw;
+      border-radius: 10px;
+      cursor: pointer;
+      background: #0b6b6f;
+      color: white;
+      font-weight: bold;
+    }
+
+   .homeContent button:hover{
+        background: rgb(8, 72, 75);
+    }
+
+   .recommendationsContainer
+   {
+    position: fixed;
+    right: 10%;
+    width: 40vw;
+    border-radius: 12px;
+    padding: 20px;
+   }
+
+   .recommendationsContainer h1 {
+    background-color: #0b6b6f;
+    color: white;
+    text-align: center;
+    height: 4vh;
+    padding: 1px 1px 1px 1px;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    width: 100%;
+   }
+
+   .recommendationsContainer .recommendations 
+   {
+    width: 100%;
+    box-sizing: border-box;
+    gap: 10px;
+    overflow-y: auto;
+    max-height: 85vh;
+    padding: 10px;  
+   }
+
+      .recommendationsContainer .recommendations::-webkit-scrollbar
+      {
+        display: none;
+      }
+
+
+
+   .recommendationsContainer .recommendations .card 
+   {
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    margin-bottom: 2vh;
+    transition: transform 0.3s, box-shadow 0.3s;
+   }
+
+   .recommendationsContainer .recommendations .card:hover 
+   {
+    transform: translateY(-5px);
+
+    box-shadow: 0px 8px 8px;
+   }
+
+
+    .recommendationsContainer .recommendations .card img 
+    {
+      width: 100%;
+      border-radius: 12px 12px 0 0;
+    }
+    .recommendationsContainer .recommendations .card h3 {
+      font-size: 1.5vw;
+      margin-top: 10px;
+      margin-left: 15px;
+    
+    }
+
+    .recommendationsContainer .recommendations .card p 
+    {
+      margin-left: 15px;
+      color: rgb(178, 168, 168);
+      
+      
+    }
+
+    .recommendationsContainer .recommendations .card button 
+    {
+      background-color: #0b6b6f;
+      color: white;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: background 0.3s;
+      margin-top: 10px;
+      width: 4vw;
+      height: 4vh;
+      margin-left: 15px;
+      margin-bottom:15px;
+    }
+
+     .recommendationsContainer .recommendations .card button:hover 
+     {
+      background-color: #08484b;
+     }
+
+     .recommendationsContainer .recommendations .card .time 
+     {
+      position:absolute;
+      right: 5%;
+      bottom: 0.5%;
+      font-size: 20px;
+      
+     }
+
+     .recommendationsContainer .recommendations .card .time p 
+     {
+      color:rgb(178, 168, 168) ;
+     }
+
+    .aboutUs {
+      position: absolute;
+      color: white;
+      left: 10%;
+    }
+
+    .aboutUs h1{
+      
+      font-size: 3.7vw;
+      font-weight: bold;
+    }
+
+    .aboutUs p {
+      background-color: rgba(0, 0, 0, 0.218);
+      line-height: 3vh;
+      width: 68vw;
+      padding: 1.31vw;
+      border-radius: 15px;
+      font-size: 1vw;
+    }
+
+    .teamSection {
+      position: absolute;
+      display: flex;
+      top: 50%;
+      left: 12.8vw;
+      
+    }
+
+    .teamSection h1{
+
+      font-size: 4vw;
+      font-weight: bold;
+      color: white;
+      margin-top: 8vh;
+     line-height: 7vh;
+
+    }
+
+    .teamContainer {
+      display: flex;
+      gap: 2.2vw;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin-left: 4vw;
+      margin-top: 8vh;
+    }
+
+    .teamCard {
+      background-color:  rgba(0, 0, 0, 0.304);
+      border-radius: 12px;
+      width: 14vw;
+      height: 20vh;
+      padding: 0.9vw;
+      display: flex;
+      flex-direction: column;
+      
+      
+    }
+    .teamCard img {
+      width: 30px;
+      height: 30px;
+      border-radius: 10%;
+      object-fit: cover;
+      margin-bottom: 1.7vh;
+      background-color:rgb(8, 72, 75);
+    }
+
+    .teamCard .name {
+      font-size: 1.05vw;
+      margin-bottom: 1vh;
+      color: white;
+      line-height: 3.5vh;
+    }
+
+    .teamCard .role {
+      background-color:rgb(8, 72, 75);;
+      color: white;
+      padding: 0.4vw 0.8vw;
+      border-radius:6px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .contactUs {
+      position: absolute;
+      color: white;
+      left: 12%;
+      top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .contactUs h1 {
+      
+      font-size: 70px;
+      font-weight: bold;
+      
+    }
+
+    .contactUs p {
+      color: rgba(255, 255, 255, 0.777);
+      margin-top: 30px;
+    }
+
+    .contactContainer {
+      position: absolute;
+      top: 35%;
+      background-color:rgba(0, 0, 0, 0.304) ;
+      width: 800px;
+      height: 450px;
+      color: white;
+      left:48%;
+      border-radius: 10px;
+      padding: 12px;
+    }
+
+    .contactContainer label {
+      color: rgba(255, 255, 255, 0.777);
+      padding: 5px;
+
+    }
+    .contactContainer input {
+      margin-top: 15px;
+      padding: 10px;
+      border-color: rgba(255, 255, 255, 0.777);
+      background-color: transparent;
+      width: 770px;
+      border-width: 1px;
+      border-radius: 10px;
+      outline: none;
+      color: white;
+      font-size: 15px;
+      height: 10px;
+    }
+
+    .contactContainer input::placeholder {
+      color: grey;
+      opacity: 1;
+     padding: 3px;
+     
+    }
+
+    .contactContainer textarea {
+      margin-top: 15px;
+      background-color: transparent;
+      width: 770px;
+      padding: 12px;
+      border-color: white;
+      outline: none;
+      border-color:rgba(255, 255, 255, 0.777) ;
+      border-width: 1px;
+      border-radius: 10px;
+      font-size: 15px;
+      color: white;
+    }
+
+    .contactContainer textarea::placeholder{
+      color: gray;
+      opacity: 1;
+      padding: 3px;
+    }
+
+    .contactContainer button {
+      background-color: #0b6b6f ;
+      width: 800px;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 15px;
+      height: 40px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .contactContainer button:hover 
+    {
+      background-color: rgb(8, 72, 75);
+    }
