@@ -4,7 +4,15 @@ const result = document.getElementById('result');
 
 function search() {
 
-  const Input = document.getElementById('searchInput').value.toLowerCase();
+  let Input = document.getElementById('searchInput').value.toLowerCase();
+
+  if(Input === 'temple')
+  Input = 'temples';
+  else if (Input === 'beach')
+  Input = 'beaches';
+  else if (Input === 'country')
+    Input= 'countries';
+
 
    if(Input === 'temples' || Input==='beaches' || Input==='countries')
    {
